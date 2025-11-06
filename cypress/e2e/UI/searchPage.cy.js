@@ -1,6 +1,6 @@
 describe('Search page', () => {
     beforeEach(() => {
-      cy.login('sandrine@email.com', '1234') 
+      cy.login(Cypress.env('email'), Cypress.env('password')) 
     })
 
   it('should be able to add item to cart from search', () => {    

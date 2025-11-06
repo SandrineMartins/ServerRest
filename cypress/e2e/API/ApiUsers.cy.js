@@ -3,10 +3,11 @@ import { faker } from '@faker-js/faker'
 describe('POST /usuarios', () => {
   const email = faker.internet.email()
   const password = faker.internet.password()
+  const nome = faker.person.fullName()
 
   it('should create a new user successfully', () => {
     cy.postUser({
-      nome: faker.person.fullName(),
+      nome,
       email,
       password,
       administrador: 'true'
@@ -19,7 +20,7 @@ describe('POST /usuarios', () => {
 
   it('should return 400 when email is already registered', () => {
     cy.postUser({
-      nome: faker.person.fullName(),
+      nome,
       email, 
       password,
       administrador: 'true'

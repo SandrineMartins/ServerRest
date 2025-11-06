@@ -14,7 +14,7 @@ npm install
 ## Configuração de ambiente (`.env`)
 Os testes de UI dependem de um usuário logado. Crie um arquivo `.env` na raiz do projeto contendo:
 ```ini
-EMAIL=seu-email-admin@example.com
+EMAIL=seu-email@example.com
 PASSWORD=sua-senha
 ```
 

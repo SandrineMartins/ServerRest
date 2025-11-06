@@ -12,14 +12,12 @@ npm install
 ```
 
 ## Configuração de ambiente (`.env`)
-Os testes de API dependem de um usuário administrador para obter o token de autenticação. Crie um arquivo `.env` na raiz do projeto contendo:
+Os testes de UI dependem de um usuário logado. Crie um arquivo `.env` na raiz do projeto contendo:
 ```ini
 EMAIL=seu-email-admin@example.com
 PASSWORD=sua-senha
 ```
 
-> **Por que apenas as credenciais de API estão no `.env`?**  
-> Optei por deixar as credenciais da UI hardcoded nos testes e mover apenas as de API para o `.env` para demonstrar as duas abordagens: variáveis de ambiente para dados sensíveis e valores literais quando queremos mostrar o fluxo completo sem depender de configuração externa.
 
 ## Execução dos testes
 
